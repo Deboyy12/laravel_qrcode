@@ -20,47 +20,48 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## QR Code Generator - Laravel
 
-## Learning Laravel
+QR Code Generator adalah aplikasi web berbasis Laravel yang memungkinkan pengguna untuk membuat QR Code dengan mudah. Pengguna cukup memasukkan URL yang ingin dijadikan QR Code, memilih ukuran dan format QR Code, dan kemudian aplikasi akan menghasilkan QR Code sesuai dengan preferensi pengguna. Selain itu, QR Code yang dihasilkan dapat langsung ditampilkan di halaman web atau diunduh dalam format yang diinginkan, seperti SVG ataupun PNG.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Ini sangat berguna bagi siapa saja yang membutuhkan QR Code untuk kebutuhan, seperti untuk berbagi link URL yang berisi dokumen tanda tangan digital didalamnya atau lainnya dengan cara yang mudah diakses dan praktis.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Fitur Utama
+- **Generate QR Code**: Memungkinkan pengguna untuk membuat QR Code dengan hanya memasukkan URL.
+- **Pilih Ukuran**: Pengguna dapat memilih antara tiga ukuran QR Code (Kecil, Sedang, Besar).
+- **Pilih Format**: Pengguna dapat memilih format file QR Code yang dihasilkan (SVG ataupun PNG).
+- **Unduh QR Code**: QR Code yang dihasilkan dapat langsung diunduh dalam format yang dipilih.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Sumber
+https://github.com/SimpleSoftwareIO/simple-qrcode/tree/develop/docs/en
 
-## Laravel Sponsors
+## Teknologi yang Digunakan
+- **Laravel**: Framework PHP yang digunakan untuk membangun aplikasi ini.
+- **simple-qrcode**: Library Laravel yang digunakan untuk membuat QR Code secara mudah.
+- **Laravel Breeze**: Autentikasi untuk untuk login, registrasi, reset password, dan verifikasi email.
+- **Blade**: Template engine Laravel yang digunakan untuk membuat tampilan aplikasi.
+- **Tailwind CSS**: Framework CSS yang digunakan untuk styling dan membuat tampilan responsif.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Tujuan Proyek
+Proyek ini dibuat untuk memenuhi Kuis/Tugas dari mata kuliah Kriptografi dan juga akan melakukan pengembangan yang lebih baik untuk kedepannya
 
-### Premium Partners
+## Screenshot
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Berikut adalah tampilan antarmuka aplikasi QR Code Generator:
 
-## Contributing
+### Tampilan Landing Page
+![Alt Text](public/screenshoot/landingpage.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Tampilan Dashboard
+![Alt Text](public/screenshoot/dashboard.png)
 
-## Code of Conduct
+### Tampilan Form QRCode dan hasil Unduh nya
+Pada contoh QRCode di tampilan ini saya gunakan URL dari sebuah PDF yang berisi data diri dan tanda tangan digital, kemudian saya melakukan upload ke google drive. Tujuan nya agar PDF nya memiliki URL yang nantinya akan di generate ke QRCode
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![Alt Text](public/screenshoot/qrcodeform.png)
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Lisensi
 
-## License
+Aplikasi ini dilisensikan di bawah MIT License. Lihat [LICENSE](LICENSE) untuk detail lebih lanjut.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
